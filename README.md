@@ -32,7 +32,7 @@ directly at the public GitHub Release asset, which GitHub serves with
 
 | Product         | Version | Platform | Category            | Editions            |
 | --------------- | ------- | -------- | ------------------- | ------------------- |
-| RG DEV POS      | 1.1.1   | Windows  | Point of Sale       | Installer           |
+| RG DEV POS      | 1.1.6   | Windows  | Point of Sale       | Installer           |
 | Herdly          | 1.0.0   | Windows  | Livestock Management| Installer, Portable |
 
 ## Adding another application

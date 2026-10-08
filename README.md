@@ -30,10 +30,11 @@ directly at the public GitHub Release asset, which GitHub serves with
 
 ## Current software
 
-| Product         | Version | Platform | Category            | Editions            |
-| --------------- | ------- | -------- | ------------------- | ------------------- |
-| RG DEV POS      | 1.1.6   | Windows  | Point of Sale       | Installer           |
-| Herdly          | 1.0.0   | Windows  | Livestock Management| Installer, Portable |
+| Product         | Version | Platform | Category             | Editions            |
+| --------------- | ------- | -------- | -------------------- | ------------------- |
+| RG DEV POS      | 1.1.6   | Windows  | Point of Sale        | Installer           |
+| Herdly          | 1.0.0   | Windows  | Livestock Management | Installer, Portable |
+| RG Pharma-POS   | 1.0.0   | Web app  | Pharmacy Point of Sale | Browser (installable PWA) |
 
 ## Adding another application
 
@@ -60,6 +61,11 @@ download buttons are all generated from that object. Optional fields:
 `releaseDate`, `installerFileSize`, `portableFileSize`, `priceKes`
 (pricing is always Kenyan Shillings). Optionally add the new
 `/software/<slug>` URL to `static/sitemap.xml`.
+
+A **web app** is the same object with `webAppUrl` instead of `downloadUrl`
+(plus `pwa: true` and `offlineCapable: true` where they apply). It is listed
+in the "Web apps" section and its primary action opens the app instead of
+downloading a file.
 
 Every release-specific field mirrors what the GitHub Releases API returns, so
 the catalogue can later be populated from that API with no frontend changes.

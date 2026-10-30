@@ -32,7 +32,8 @@ directly at the public GitHub Release asset, which GitHub serves with
 
 | Product         | Version | Platform | Category             | Editions            |
 | --------------- | ------- | -------- | -------------------- | ------------------- |
-| RG DEV POS      | 1.1.6   | Windows  | Point of Sale        | Installer           |
+| RG DEV POS      | 1.6.0   | Windows  | Point of Sale        | Installer           |
+| RG-Present      | 1.5.1   | Windows  | Church Presentation  | Installer           |
 | Herdly          | 1.0.0   | Windows  | Livestock Management | Installer, Portable |
 | RG Pharma-POS   | 1.0.0   | Web app  | Pharmacy Point of Sale | Browser (installable PWA) |
 
@@ -88,7 +89,8 @@ brand/favicon/rg-devs-icon-512.png   brand/social/rg-devs-og-image.png
 
 Product glyphs (`components/ProductGlyph.tsx`) share one optical grid, 2px
 blue strokes and a single green accent; Herdly and Herdly Portable share a
-body so they read as one product family.
+body so they read as one product family. RG-Present uses a projector
+screen with a green music note.
 
 ## Brand system
 

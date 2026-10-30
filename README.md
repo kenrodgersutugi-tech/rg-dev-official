@@ -35,6 +35,7 @@ directly at the public GitHub Release asset, which GitHub serves with
 | RG DEV POS      | 1.6.0   | Windows  | Point of Sale        | Installer           |
 | RG-Present      | 1.5.1   | Windows  | Church Presentation  | Installer           |
 | Herdly          | 1.0.0   | Windows  | Livestock Management | Installer, Portable |
+| Herdly Pro      | 2026.10.21.305 | Windows | Livestock Management | Microsoft Store |
 | RG Pharma-POS   | 1.0.0   | Web app  | Pharmacy Point of Sale | Browser (installable PWA) |
 
 ## Adding another application
@@ -62,6 +63,10 @@ download buttons are all generated from that object. Optional fields:
 `releaseDate`, `installerFileSize`, `portableFileSize`, `priceKes`
 (pricing is always Kenyan Shillings). Optionally add the new
 `/software/<slug>` URL to `static/sitemap.xml`.
+
+A **Microsoft Store** app uses `microsoftStoreUrl` (the
+`apps.microsoft.com/detail/<id>` link); it gets a "Get it from Microsoft
+Store" button and is listed with the Windows downloads.
 
 A **web app** is the same object with `webAppUrl` instead of `downloadUrl`
 (plus `pwa: true` and `offlineCapable: true` where they apply). It is listed
